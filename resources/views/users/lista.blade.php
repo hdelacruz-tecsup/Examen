@@ -5,10 +5,11 @@
 
 		<div >
 			<div class="col-lg-12 col-md-12 col-sm-12">
-				<table class="table table-striped" style="margin-left: 15px;">
+				<table class="table table-striped" style="background: #FFFFFF">
 							<div class="col-lg-3 col-md-3 col-sm-3 mbform-group" style="margin-left: -70px; margin-top: -40px;font-family: sans-serif; font-size: 22px;"><a href="{{ route('users.create') }}"><button class="btn btn-primary btn-xs"><i class="fa fa-plus "><span  style="font-family: sans-serif;"> Agregar Empleado</span></i></button></a>
 					</div>
-					<thead style="font-size: 14px;border-radius: 5px; border-color: #BDBDBD;box-shadow: 0 0 4px #A4A4A4; text-align: center; ">
+					<br>
+					<thead style="font-size: 14px;border-radius: 5px; border-color: #BDBDBD;box-shadow: 0 0 4px #A4A4A4; text-align: center; margin-right: 30px;font-family: sans-serif;">
 					    <tr>
 					      <th scope="col" style="text-align: center;">ID</th>
 					      <th scope="col" style="text-align: center;">Nombre</th>

@@ -66,7 +66,8 @@ class UsersController extends Controller
      */
     public function edit($id)
     {
-        //
+        $user = User::find($id);
+        return view('users.edit')->with('user', $user);
     }
 
     /**
@@ -78,7 +79,12 @@ class UsersController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $user = User::find($id);
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->password =$request->password;
+        $user->save();
+        return redirect()->route('users.index');
     }
 
     /**
@@ -89,6 +95,8 @@ class UsersController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user = User::find($id);
+        $user->delete();
+        return redirect()->route('users.index');
     }
 }

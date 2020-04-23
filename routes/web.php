@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth/login');
 });
 
 Route::get('inicio', function () {
@@ -28,6 +28,11 @@ Route::resource('users','UsersController');
 
 Route::resource('articulos','ArticulosController');
 
+
+	Route::resource('users','UsersController');
+	Route::get('users/{id}/destroy',[
+		'uses' => 'UsersController@destroy',
+		'as'   => 'users.destroy']);
 
 	Route::get('articulos/{id}/destroy',[
 		'uses' => 'ArticulosController@destroy',

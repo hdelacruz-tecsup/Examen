@@ -79,9 +79,9 @@ class ArticulosController extends Controller
     {
         $articulo = Articulo::find($id);
         $articulo->descripcion = $request->descripcion;
-        $user->precio = $request->precio;
-        $user->stock =$request->stock;
-        $user->save();
+        $articulo->precio = $request->precio;
+        $articulo->stock =$request->stock;
+        $articulo->save();
         return redirect()->route('articulos.index');
     }
 
