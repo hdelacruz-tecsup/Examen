@@ -38,6 +38,14 @@
                 </div>
             </div>
         </nav>
+        <div class="row justify-content-center" >
+            <div class="col-md-8">
+                <div style="background:url(logo.png);;height: 120px;">
+                    <br><br>
+                    <h2 style="color: white;text-align: center;"><strong>EL CRUD DE HUGO</strong></h2>
+                </div>
+            </div>
+        </div>
 
         <main class="py-4">
             @yield('content')
